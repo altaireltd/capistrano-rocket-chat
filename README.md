@@ -80,6 +80,7 @@ Possible 'event -> hook' states are:
     "scm": "git",
     "log_level": "debug",
     "local_user": "johndoe",
+    "git_user": "John Doe",
     "server": {
       "name": "my_server.com",
       "user": "my_ssh_user"
