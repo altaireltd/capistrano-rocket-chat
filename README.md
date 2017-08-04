@@ -3,34 +3,30 @@ rocket.chat webhook gem for [Capistrano 3](https://github.com/capistrano/capistr
 
 ## Installation
 
-Add this line to your application's *Gemfile*:
+Add this line to your *Gemfile*:
 
 ```ruby
-gem 'capistrano-rocket-chat'
+gem 'capistrano-rocket-chat', git:'https://github.com/altaireltd/capistrano-rocket-chat.git', tag:'v0.1.9.1'
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install capistrano-rocket-chat
-
-In your *Capfile* add this line:
+In your *Capfile*, add this line:
 
 ```ruby
 require 'capistrano/rocket_chat'
 ```
 
-Add the rocket.chat webhook url including the webhook token to your *deploy.rb* file:
+Add the rocket.chat webhook url, including the webhook token, to your *deploy.rb* file:
 
 ```ruby
 set :rocket_chat_webhook_url, "https://mychat.com/hooks/MYTOKEN"
 ```
 
 
-_Optionnal_
+_Optional_
 
 If you want override the channel directly in the capistrano config:
 
@@ -38,7 +34,7 @@ If you want override the channel directly in the capistrano config:
 set :rocket_chat_channel, "#CHANNEL"
 ```
 
-And you are ready to go
+And, boom goes the dynamite! You're ready to go.
 
 ## Usage
 
@@ -104,4 +100,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/cbajoh
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
